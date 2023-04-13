@@ -2,16 +2,21 @@ import './Article.css';
 
 function Article({ article }) {
 
-    console.log(article)
-  return (
+    const date = new Date(article['published_date'])
+
+    return (
     
       <a href={article.url}>
         <div className="article">
-            <img 
-                src={article.multimedia[0].url}
-            />
+            <div className="article-image"
+                style={{backgroundImage: `url(${article.multimedia[0].url})`}}
+
+            >
+                <p>{article.section.toUpperCase()}</p>
+            </div>
             <h2>{article.title}</h2>
-            <p>{article.section}</p>
+            <p>{article.byline}</p>
+            <p>{date.toDateString()}</p>
         </div>
       </a>
   );
