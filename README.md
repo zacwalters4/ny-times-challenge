@@ -17,7 +17,7 @@ The New York Times take home challenge application is simply meant to display a 
 - Some sort of search, filter, OR sort
 
 ## Preview
-![Project Preview](https://user-images.githubusercontent.com/22826695/231839368-a6c91707-7811-4e85-8f67-ed6009775799.png)
+![Project Preview Gif](https://user-images.githubusercontent.com/22826695/231841795-809ca86e-5a20-40db-a6eb-e0846c8ea620.gif)
 
 ## Planning 
 ![Project Plan](https://user-images.githubusercontent.com/22826695/231839231-e4c18a40-41ac-4ef5-a831-0703993df646.png)
