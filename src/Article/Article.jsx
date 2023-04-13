@@ -1,10 +1,19 @@
 import './Article.css';
 
-function Article() {
+function Article({ article }) {
+
+    console.log(article)
   return (
-    <div className="Article">
-      <h1>hello</h1>
-    </div>
+    
+      <a href={article.url}>
+        <div className="article">
+            <img 
+                src={article.multimedia[0].url}
+            />
+            <h2>{article.title}</h2>
+            <p>{article.section}</p>
+        </div>
+      </a>
   );
 }
 
