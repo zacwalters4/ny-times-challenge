@@ -1,0 +1,50 @@
+a {
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black;
+    border-radius: 1em;
+    width: 20em;
+    height: 25em;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all .2s;
+}
+
+.article:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+.article > h2 {
+    font-weight: bold;
+    font-size: large;
+    width: 90%;
+}
+.article > p {
+    margin: 0;
+    width: 90%;
+}
+
+.article-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.article-image > p {
+    margin: 0;
+    padding: 5%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-size: larger;
+}
