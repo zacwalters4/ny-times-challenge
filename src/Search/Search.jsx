@@ -1,8 +1,7 @@
 import './Search.css'
 import { useState, useEffect } from 'react'
 
-function Search({articles}) {
-
+function Search({articles, filterArticles}) {
     const createOptions = () => {
         let sections = []
         return articles.map((article, index) => {
@@ -15,7 +14,7 @@ function Search({articles}) {
 
     const handleChange = (e) => {
         e.preventDefault()
-        console.log(e.target.value)
+        filterArticles(e.target.value)
     }
 
     return (
